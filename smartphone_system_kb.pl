@@ -45,7 +45,6 @@ collect_sex:-
 collect_sex.
 
 getsex(X):-
-	repeat,
 	write('Please answer M/F'),nl,
 	read(Z),nl,
 	check(Z),
@@ -80,7 +79,6 @@ collect_geral:-
 collect_geral.
 
 getyesno(X):-
-	repeat,
 	write('Please answer y or n:'),nl,
 	read(Z),nl,
 	check(Z),
