@@ -109,7 +109,7 @@ question('do you have/want a wireless charger?', wireless).
 question('Do you need a device with fast processing power?', power).
 question('Do you frequently play mobile games?', mobilegames).
 question('Do you want a bigger screen?', bigscreen).
-question(‘do you want a fingerprint sensor?’, fingerprint).
+question('do you want a fingerprint sensor?', fingerprint).
 
 /* Rules (Different devices that can be presented to the user depending on the answers provided) */
 
