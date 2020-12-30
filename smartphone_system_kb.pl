@@ -105,35 +105,37 @@ question('Do you currently own an Android device?', own_android).
 question('Do you need a good camera on your device?', pictures).
 question('Do you activilely download mobile applications?', apps).
 question('Do you speed more then 4 hours a day on your mobile device?', batterylife).
+question('do you have/want a wireless charger?', wireless).
 question('Do you need a device with fast processing power?', power).
 question('Do you frequently play mobile games?', mobilegames).
 question('Do you want a bigger screen?', bigscreen).
+question(‘do you want a fingerprint sensor?’, fingerprint).
 
 /* Rules (Different devices that can be presented to the user depending on the answers provided) */
 
 rule(1, samsung_a21s, 'The best phone for you is Samsung A21s.'):-
-	information(experience), information(own_android), information(pictures), information(batterylife), information(bigscreen), information(apps).
+	information(experience), information(own_android), information(pictures), information(batterylife), information(bigscreen), information(apps), information(fingerprint).
 
 rule(2, samsung_a71, 'The best phone for you is Samsung A71.'):-
-	information(experience), information(own_android), information(pictures), information(batterylife), information(bigscreen), information(apps), information(mobilegames), information(power).
+	information(experience), information(own_android), information(pictures), information(batterylife), information(bigscreen), information(apps), information(mobilegames), information(power),information(fingerprint).
 
 rule(3, samsung_s10, 'The best phone for you is Samsung S10.'):-
-	information(experience), information(own_android), information(pictures), information(batterylife), information(apps), information(mobilegames), information(power).
+	information(experience), information(own_android), information(pictures), information(batterylife),information(wireless), information(apps), information(mobilegames), information(power),information(fingerprint).
 
 rule(4, samsung_a41, 'The best phone for you is Samsung A41.'):-
-	information(experience), information(own_android), information(pictures), information(batterylife), information(apps), information(power).
+	information(experience), information(own_android), information(pictures), information(batterylife), information(apps), information(power),information(fingerprint).
 
 rule(5, apple_11, 'The best phone for you is Apple 11.'):-
-	information(experience), information(own_apple), information(pictures), information(batterylife), information(bigscreen), information(apps), information(mobilegames), information(power).
+	information(experience), information(own_apple), information(pictures), information(batterylife), information(wireless), information(bigscreen), information(apps), information(mobilegames), information(power).
 
 rule(6, apple_7, 'The best phone for you is Apple 7.'):-
-	information(experience), information(own_apple), information(batterylife), information(mobilegames), information(apps), information(power).
+	information(experience), information(own_apple), information(batterylife), information(wireless), information(mobilegames), information(apps), information(power),information(fingerprint).
 
 rule(7, apple_8plus, 'The best phone for you is Apple 8 Plus.'):-
-	information(experience), information(own_apple), information(batterylife), information(apps), information(mobilegames), information(bigscreen).
+	information(experience), information(own_apple), information(batterylife), information(apps), information(mobilegames), information(bigscreen),information(fingerprint).
 
 rule(8, apple_se2020, 'The best phone for you is Apple SE 2020.'):-
-	information(experience), information(own_apple), information(batterylife), information(apps), information(mobilegames).
+	information(experience), information(own_apple), information(batterylife), information(wireless), information(apps), information(mobilegames), information(fingerprint).
 
 rule(9,unknown).
 
