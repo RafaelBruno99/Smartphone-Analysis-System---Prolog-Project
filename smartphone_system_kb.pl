@@ -41,8 +41,7 @@ initialise:-
 collect_sex:-
   questionsex(Quest, Answer),
 	write(Quest),nl,
-	getsex(Value),nl,
-	assertz(information(Answer));
+	getsex(Value),nl.
 collect_sex.
 
 getsex(X):-
@@ -60,8 +59,7 @@ getsex(X):-
 collect_age:-
 	questionage(Quest, Answer),
 	write(Quest),nl,
-	getage(0, 100,Value),nl,
-	assertz(information(Answer)).
+	getage(0, 100,Value),nl.
 
 collect_age.
 
