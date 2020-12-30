@@ -103,7 +103,7 @@ question('Do you have any experience with Smartphone?', experience).
 question('Do you currently own an Apple device?', own_apple).
 question('Do you currently own an Android device?', own_android).
 question('Do you need a good camera on your device?', pictures).
-question('Do you activilely download mobile applications?', apps).
+question('Do you regularly download mobile applications?', apps).
 question('Do you speed more then 4 hours a day on your mobile device?', batterylife).
 question('do you have/want a wireless charger?', wireless).
 question('Do you need a device with fast processing power?', power).
